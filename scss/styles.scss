@@ -22,3 +22,12 @@
 @import "layouts/grids";
 @import "layouts/print";
 
+// projects
+
+#projects li{
+    @include grid(4, 6%)
+    img{
+      width: 100%;
+    }
+  }
+

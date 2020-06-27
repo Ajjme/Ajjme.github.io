@@ -5,11 +5,20 @@
 //  body, article, section, nav, aside, hgroup, header, footer, address
 //  ======================================================
 
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+@mixin functionname($input, $background) {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $input;
+  background: $background;
+}
+/* <link rel="stylesheet" href="../scss\styles.css"> this is code to link approprate style sheet@include functionname(column, blue)*/
 }
 
 body {
@@ -24,10 +33,20 @@ body {
   text-rendering: optimizeSpeed;
 }
 
-main,
-header,
-footer,
-aside {}
+main{
+  background-color: darken($color: #005cb8, $amount: 0);}
+
+header {
+  background-color: green($color: #334455);
+}
+footer{
+  @extend main
+  width: 100% - 20%;
+}
+  
+aside {
+  @extend main
+}
 
 // Natural flow and rhythm in articles by default 
 article > * + * {

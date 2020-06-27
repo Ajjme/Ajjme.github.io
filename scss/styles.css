@@ -99,6 +99,7 @@
           box-sizing: border-box;
 }
 
+/* <link rel="stylesheet" href="../scss\styles.css"> this is code to link approprate style sheet*/
 body {
   color: var(--black-80);
   font-family: var(--font-family);
@@ -109,6 +110,28 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+}
+
+main, footer {
+  background-color: #334455;
+}
+
+header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: blue;
 }
 
 article > * + * {
@@ -319,3 +342,4 @@ select {
   }
 }
 /*# sourceMappingURL=styles.css.map */
+
