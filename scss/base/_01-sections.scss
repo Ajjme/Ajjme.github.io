@@ -19,7 +19,7 @@
   background: $background;
 }
 /* <link rel="stylesheet" href="../scss\styles.css"> this is code to link approprate style sheet@include functionname(column, blue)*/
-}
+
 
 body {
   color: var(--black-80);
@@ -40,9 +40,9 @@ header {
   background-color: green($color: #334455);
 }
 footer{
-  @extend main
-  width: 100% - 20%;
-}
+  @extend main;
+  width: 100% - 20% }
+
   
 aside {
   @extend main
