@@ -10,42 +10,61 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+    <link rel="stylesheet" href="..//css\resume.css">
+    <link rel="stylesheet" href="..//css\idk.css">
+    <link rel="stylesheet" href="..//css\dropdownjava.js">
+    <link rel="stylesheet" href="..//css\dropdownmenu.css">
+    
   </head>
 
   <body>
     <header role="banner">
-      <h1>Andrew Johnson's Website</h1>
+      <h1 id="center">Andrew Johnson's Website<span id="right"><img src="css\transparentpheonix.png" alt="logo" width="100px"></span></h1>
       
     </header>
-    <nav role="navigation">
-      <ul>
-        <li><a href="now/index.html">Now</a></li>
-        <li><a href="about/index.html">About</a></li>
-        <li><a href="resume/index.html">Resume</a></li>
-        <li><a href="projects/index.html">Projects</a></li>
-        <li><a href="Environmental Science\Index.html">Environmental Science</a></li>
-        <li><a href="research/index.html">Research</a></li>
-        <li><a href="teaching/index.html">Teaching</a></li>
-        <li><a href="publications/index.html">Publications</a></li>
-        <li><a href="talks/index.html">Talks</a></li>
-        <li><a href="Business\COsquared.html">Business</a></li>
-        <li><a href="Hobbies\index.html">Hobbies</a></li>
-        <li><a href="Music and Communication\index.html">Music and Communication</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="contact/index.html">Contact</a></li>
-        <li><a href="Building a Website\index.html">Building a Website</a></li>
-      </ul>
-    </nav>
-    <main>
+    
+<!-- Sidebar/menu -->
+<nav class="w3-card-4 w3-quarter " style="z-index:3;width:300px;" ><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="..//about\AndrewProfile.jpg" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span><strong>  Welcome</strong> </span>
+    </div>
+  </div>
+  
+  <hr>
+  <div class="w3-container">
+    <h5>PAGES</h5>
+  </div>
+  <div class="w3-bar-block">
+    <ul>
+      <li><a href="about/index.html" class="w3-bar-item w3-button w3-padding "><strong> About</a></li>
+      <li><a href="projects/index.html"class="w3-bar-item w3-button w3-padding"><strong>Projects</a></li>
+      <li><a href="Environmental Science\Index.html"class="w3-bar-item w3-button w3-padding"><strong>Environmental Science</a></li>
+      <li><a href="research/index.html"class="w3-bar-item w3-button w3-padding"><strong>Research</a></li>
+      <li><a href="Business\COsquared.html"class="w3-bar-item w3-button w3-padding"><strong>Business</a></li>
+      <li><a href="Hobbies\index.html"class="w3-bar-item w3-button w3-padding"><strong>Hobbies</a></li>
+      <li><a href="Music and Communication\index.html"class="w3-bar-item w3-button w3-padding"><strong>Music and Communication</a></li>
+      <li><a href="blog/index.html"class="w3-bar-item w3-button w3-padding"><strong>Blog</a></li>
+      <li><a href="contact/index.html"class="w3-bar-item w3-button w3-padding"><strong>Contact</a></li>
+</ul>
+    
+  </div>
+</nav>
 
-      <h2>About this Site</h2>
-      <p class="standfirst"> Focus on the Information</p>
-      <p>This site is simple by design</p>
+    <main  class="w3-threequarter pheonix" id= "paddingleft">
+      
+  <!--
+      <h2 id = "white" >About this Site</h2>
+      <p class ="standfirst" id="white"> Focus on the Information</p>
+      <p id="white">This site is simple by design
+      </p>-->
     </main>
 
 
-    <footer role="contentinfo">
+    <footer role="contentinfo" id = "footer">
       <div class="social-icons">
 
       <a rel="me" href="https://github.com/uclaioes/my-first-website">
@@ -59,10 +78,6 @@
       <path d="M12 0c-6.617 0-12 5.383-12 12s5.383 12 12 12 12-5.383 12-12-5.383-12-12-12zm8 16c0 1.103-.897 2-2 2h-12c-1.103 0-2-.897-2-2v-8c0-1.103.897-2 2-2h12c1.103 0 2 .897 2 2v8zM17.887 8.184c-.175-.214-.49-.245-.704-.07l-5.183 4.24-5.183-4.241c-.214-.175-.529-.143-.704.071s-.143.528.07.703l3.618 2.96-3.566 2.229c-.234.147-.306.455-.159.689.095.152.258.235.424.235.091 0 .182-.024.265-.076l3.854-2.409 1.064.872c.092.075.205.113.317.113s.225-.038.317-.113l1.065-.872 3.854 2.409c.081.052.173.076.264.076.167 0 .33-.083.425-.235.146-.234.075-.542-.159-.689l-3.566-2.229 3.618-2.96c.212-.175.244-.49.069-.703z"/>
       </g>
       </svg>
-      </a>
-      
-      <a rel="me" href="https://twitter.com/">
-      <svg class="icon twitter" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" aria-labelledby="title" role="img"><title id="title">Twitter</title><g><path d="M12 0c-6.617 0-12 5.383-12 12s5.383 12 12 12 12-5.383 12-12-5.383-12-12-12zm5.262 9.385l.008.34c0 3.478-2.647 7.489-7.488 7.489-1.486 0-2.87-.437-4.035-1.184 1.374.161 2.771-.207 3.896-1.089-1.151-.022-2.123-.783-2.458-1.829.396.075.803.061 1.188-.046-1.204-.24-2.111-1.305-2.111-2.579v-.035c.355.197.762.315 1.192.33-.706-.473-1.171-1.277-1.171-2.19 0-.482.13-.934.356-1.324 1.298 1.593 3.237 2.642 5.425 2.75-.045-.191-.068-.394-.068-.599 0-1.454 1.179-2.632 2.633-2.632.757 0 1.44.319 1.921.832.6-.119 1.95-.266 1.95-.266-.353.529-.724 1.66-1.238 2.032z" /></g></svg>
       </a>
       
       <a rel="me" href="https://instagram.com/">
@@ -92,6 +107,8 @@
       
         <small>Created by <span class="p-author p-name h-card vcard">Andrew Johnson</span>. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. </small> 
       </footer> 
+    
+
   </body>
 
 </html>

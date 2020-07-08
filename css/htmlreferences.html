@@ -1,0 +1,67 @@
+<!-- Sidebar/menu -->
+<nav class="w3-onethird w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container w3-row">
+      <div class="w3-col s4">
+        <img src="..//about\AndrewProfile.jpg" class="w3-circle w3-margin-right" style="width:46px">
+      </div>
+      <div class="w3-col s8 w3-bar">
+        <span><strong>Welcome</strong> </span><br>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+      </div>
+    </div>
+    
+    <hr>
+    <div class="w3-container">
+      <h5>PAGES</h5>
+    </div>
+    <div class="w3-bar-block">
+      <ul>
+        <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+        <li><a href="now/index.html" class="w3-bar-item w3-button w3-padding "><strong> Now</a></li>
+        <li><a href="about/index.html" class="w3-bar-item w3-button w3-padding "><strong> About</a></li>
+        <li><a href="resume/index.html"class="w3-bar-item w3-button w3-padding"><strong>Resume</a></li>
+        <li><a href="projects/index.html"class="w3-bar-item w3-button w3-padding"><strong>Projects</a></li>
+        <li><a href="Environmental Science\Index.html"class="w3-bar-item w3-button w3-padding"><strong>Environmental Science</a></li>
+        <li><a href="research/index.html"class="w3-bar-item w3-button w3-padding"><strong>Research</a></li>
+        <li><a href="teaching/index.html"class="w3-bar-item w3-button w3-padding"><strong>Teaching</a></li>
+        <li><a href="publications/index.html"class="w3-bar-item w3-button w3-padding"><strong>Publications</a></li>
+        <li><a href="talks/index.html"class="w3-bar-item w3-button w3-padding"><strong>Talks</a></li>
+        <li><a href="Business\COsquared.html"class="w3-bar-item w3-button w3-padding"><strong>Business</a></li>
+        <li><a href="Hobbies\index.html"class="w3-bar-item w3-button w3-padding"><strong>Hobbies</a></li>
+        <li><a href="Music and Communication\index.html"class="w3-bar-item w3-button w3-padding"><strong>Music and Communication</a></li>
+        <li><a href="blog/index.html"class="w3-bar-item w3-button w3-padding"><strong>Blog</a></li>
+        <li><a href="contact/index.html"class="w3-bar-item w3-button w3-padding"><strong>Contact</a></li>
+        <li><a href="Building a Website\index.html"class="w3-bar-item w3-button w3-padding"><strong>Building a Website</a></li>
+  
+      
+    </div>
+  </nav>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    new MetisMenu('#menu1');
+  });
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+    
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+    
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+    
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+    </script>
